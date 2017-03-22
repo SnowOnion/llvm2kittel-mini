@@ -1,0 +1,23 @@
+Requirements:
+-------------
+
+  * A C++ compiler (both gcc and clang have been tested).
+  * LLVM (versions 2.9 and 3.4 have been tested, but versions 3.0, 3.1,
+          3.2, 3.3, 3.5, 3.6, 3.7, and 3.8 should also work).
+  * GMP
+
+Build instructions:
+-------------------
+
+## Alternative 1:
+
+import to Jetbrains CLion, run target `llvm2kittel_mini`.
+
+## Alternative 2:
+
+  1. Run CMake for a build directory:
+       $ mkdir /path/to/llvm2kittel-build
+       $ cd /path/to/llvm2kittel-build
+       $ cmake -DCMAKE_PREFIX_PATH=/path/to/llvm-build /path/to/llvm2kittel
+
+  2. Run 'make' from the build directory.
