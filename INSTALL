@@ -11,7 +11,7 @@ Build instructions:
 
 ## Alternative 1:
 
-import to Jetbrains CLion, run target `llvm2kittel_mini`.
+  import to Jetbrains CLion, run target `llvm2kittel_mini`.
 
 ## Alternative 2:
 

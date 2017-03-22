@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="llvm2kittel_mini"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lee/Development/llvm2kittel-mini"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lee/Development/llvm2kittel-mini"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lee/Development/llvm2kittel-mini"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm2kittel_mini">
+				<Option output="/home/lee/Development/llvm2kittel-mini/llvm2kittel_mini" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lee/Development/llvm2kittel-mini"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/llvm-3.4/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 llvm2kittel_mini"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm2kittel_mini/fast">
+				<Option output="/home/lee/Development/llvm2kittel-mini/llvm2kittel_mini" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lee/Development/llvm2kittel-mini"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/llvm-3.4/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 llvm2kittel_mini/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lee/Development/llvm2kittel-mini/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Condenser.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Condenser.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Constraint.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Constraint.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/ConstraintEliminator.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/ConstraintEliminator.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Polynomial.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Polynomial.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Rule.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Rule.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Slicer.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Slicer.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Term.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/Term.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/gmp_kittel.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/gmp_kittel.h">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/llvm2kittel.cpp">
+			<Option target="llvm2kittel_mini"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lee/Development/llvm2kittel-mini/cmake/modules/FindGMP.cmake">
+			<Option virtualFolder="CMake Files\cmake\modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

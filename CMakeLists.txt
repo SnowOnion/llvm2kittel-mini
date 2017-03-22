@@ -24,7 +24,9 @@ set(SOURCE_FILES
         Term.cpp
         Constraint.cpp
         ConstraintEliminator.cpp
-        Slicer.cpp)
+        Condenser.cpp
+        Slicer.cpp
+        )
 add_executable(llvm2kittel_mini ${SOURCE_FILES})
 
 # GMP stuff 2/2 start

@@ -18,8 +18,6 @@
 #include "Term.h"
 
 // C++ includes
-#include <list>
-#include <map>
 #include <sstream>
 
 Rule::Rule(ref<Term> lhs, ref<Term> rhs, ref<Constraint> c)

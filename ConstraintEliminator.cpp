@@ -19,10 +19,8 @@
 // C/C++ includes
 #include <fstream>
 #include <iostream>
-#include <set>
 #include <sstream>
 #include <unistd.h>
-#include <stdlib.h>
 #include <string.h>
 
 class CVC4Eliminate : public EliminateClass

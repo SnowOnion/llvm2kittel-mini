@@ -20,7 +20,6 @@
 // C++ includes
 #include <sstream>
 #include <iostream>
-#include <cstdlib>
 
 ref<Constraint> Constraint::_true;
 ref<Constraint> Constraint::_false;

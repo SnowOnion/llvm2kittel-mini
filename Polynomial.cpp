@@ -19,7 +19,6 @@
 
 // C++ includes
 #include <sstream>
-#include <cstdlib>
 
 Monomial::Monomial(std::string x)
   : refCount(0),

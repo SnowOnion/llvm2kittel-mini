@@ -23,9 +23,7 @@
 // C++ includes
 #include <iostream>
 #include <sstream>
-#include <cstdlib>
 #include <queue>
-#include <vector>
 
 using std::cout;
 using std::endl;
