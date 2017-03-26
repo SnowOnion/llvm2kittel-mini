@@ -41,23 +41,34 @@ void printRules(std::list<ref<Rule> > rules, std::string message = "-") {
     std::cout << "====Outputting " << message << " done." << std::endl;
 }
 
+ref<Polynomial> fromInt(int x) {
+    // https://gmplib.org/manual/Assigning-Integers.html
+    mpz_t xx;
+    mpz_init(xx);
+    mpz_set_si(xx, x);
+    return Polynomial::create(xx);
+}
 
 int main(int argc, char *argv[]) {
 
     //// 1/3 用 Kittel 的数据结构构造 5 个 rule 列表，并打印出来
+
+
 
     std::list<ref<Rule> > twoRules({Rule::create(
             Term::create("f0", std::list<ref<Polynomial> >(
                     {Polynomial::create("x")})),
             Term::create("f1",
                          std::list<ref<Polynomial> >(
-                                 {Polynomial::create("x")->sub(Polynomial::create(Monomial::create("1")))})),
+                                 {Polynomial::create("x")->sub(Polynomial::one)})),
             True::create()), Rule::create(
             Term::create("f1", std::list<ref<Polynomial> >(
                     {Polynomial::create("x")})),
             Term::create("f2",
                          std::list<ref<Polynomial> >(
-                                 {Polynomial::create("x")->sub(Polynomial::one)->sub(Polynomial::one)})),
+                                 {Polynomial::create("x")->sub(fromInt(2))
+//                                          ->sub(Polynomial::one)->sub(Polynomial::one)
+                                 })),
             True::create())});
 
 

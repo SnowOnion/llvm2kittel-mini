@@ -113,6 +113,6 @@ The condensing and slicing part of https://github.com/s-falke/llvm2kittel
 
 # 2017-03-26
 
-- [] gmp，构造数儿
-- [] 构造非原子 constraint
-- [] kittelize, smtsolver
+- [x] gmp，构造数儿 // Done: mpz_t two;mpz_init(two);mpz_set_si(two,2); https://gmplib.org/manual/Assigning-Integers.html
+- [ ] 构造非原子 constraint
+- [ ] kittelize, smtsolver
