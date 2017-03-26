@@ -46,6 +46,22 @@ int main(int argc, char *argv[]) {
 
     //// 1/3 用 Kittel 的数据结构构造 5 个 rule 列表，并打印出来
 
+    std::list<ref<Rule> > twoRules({Rule::create(
+            Term::create("f0", std::list<ref<Polynomial> >(
+                    {Polynomial::create("x")})),
+            Term::create("f1",
+                         std::list<ref<Polynomial> >(
+                                 {Polynomial::create("x")->sub(Polynomial::create(Monomial::create("1")))})),
+            True::create()), Rule::create(
+            Term::create("f1", std::list<ref<Polynomial> >(
+                    {Polynomial::create("x")})),
+            Term::create("f2",
+                         std::list<ref<Polynomial> >(
+                                 {Polynomial::create("x")->sub(Polynomial::one)->sub(Polynomial::one)})),
+            True::create())});
+
+
+
     std::list<ref<Rule> > myKittelizedRules({Rule::create(
             Term::create("eval_main_start", std::list<ref<Polynomial> >(
                     {Polynomial::create("v_y.0"),
@@ -72,7 +88,10 @@ int main(int argc, char *argv[]) {
                     {Polynomial::create("v_y.0"), Polynomial::create("v_r.0"), Polynomial::create("v_1")})),
             Term::create("eval_main_bb2_in", std::list<ref<Polynomial> >(
                     {Polynomial::create("v_y.0"), Polynomial::create("v_r.0"),
-                     Polynomial::create("v_y.0")->sub(Polynomial::one)})),
+                     Polynomial::create("v_y.0")->
+                             sub(Polynomial::one)->sub(Polynomial::one)
+//                    sub(Polynomial::create("2"))
+                    })),
             Atom::create(Polynomial::create("v_y.0"), Polynomial::null, Atom::AType::Leq)), Rule::create(
             Term::create("eval_main_bb2_in", std::list<ref<Polynomial> >(
                     {Polynomial::create("v_y.0"), Polynomial::create("v_r.0"), Polynomial::create("v_1")})),
@@ -262,11 +281,23 @@ int main(int argc, char *argv[]) {
                                                          });
 
 
+    printRules(twoRules, "twoRules");
+    auto condenseTwoRules = Condenser::purifiedGetCondensedRules(
+            twoRules,
+            std::set<std::string>(
+                    {"f0", "f2"}),
+            Condenser::calc_vars_from_rules(twoRules)
+    );
+    printRules(condenseTwoRules, "condenseTwoRules");
+
+
+
+
     printRules(myKittelizedRules, "myKittelizedRules");
-    printRules(myKittelizedRulesWithMoreRule, "myKittelizedRulesWithMoreRule");
-    printRules(myKittelizedRulesWithMoreVar, "myKittelizedRulesWithMoreVar");
-    printRules(myKittelizedRulesIsomorphismVar, "myKittelizedRulesIsomorphismVar");
-    printRules(myKittelizedRulesIsomorphismVarAndFunctionSymbol, "myKittelizedRulesIsomorphismVarAndFunctionSymbol");
+//    printRules(myKittelizedRulesWithMoreRule, "myKittelizedRulesWithMoreRule");
+//    printRules(myKittelizedRulesWithMoreVar, "myKittelizedRulesWithMoreVar");
+//    printRules(myKittelizedRulesIsomorphismVar, "myKittelizedRulesIsomorphismVar");
+//    printRules(myKittelizedRulesIsomorphismVarAndFunctionSymbol, "myKittelizedRulesIsomorphismVarAndFunctionSymbol");
 
     //// 2/3 以 myKittelizedRulesWithMoreRule 为例，演示 condense。
     //// 注意：必须手动指定在 condense 后留下的 FunctionSymbol 集合（Condenser::purifiedGetCondensedRules() 的第二个参数）。

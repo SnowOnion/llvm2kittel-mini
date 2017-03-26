@@ -110,3 +110,9 @@ The condensing and slicing part of https://github.com/s-falke/llvm2kittel
     ====Outputting [6/6] after sliceDuplicates done.
 
     Process finished with exit code 0
+
+# 2017-03-26
+
+- [] gmp，构造数儿
+- [] 构造非原子 constraint
+- [] kittelize, smtsolver
